@@ -1,0 +1,84 @@
+.account {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  height: 92vh;
+}
+
+.accountleft {
+  background-image: linear-gradient(to right, #fff5bc, #cec1ff);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vmax;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.accountright {
+  padding: 2vmax;
+  box-sizing: border-box;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accountright img:hover {
+  transform: scale(1.1);
+}
+
+.accountright img {
+  transition: all 0.5s;
+}
+
+.accountright > h5 {
+  margin: 2vmax;
+}
+
+.accountright > a {
+  color: rgb(73, 73, 73);
+  text-decoration: none;
+  font: 100 1.2rem "Roboto";
+  text-align: center;
+  margin-top: 2vmax;
+  padding: 0.5vmax 1vmax;
+  transition: all 0.5s;
+}
+
+.accountright > a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
+}
+.accountright > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1vmax;
+}
+
+.accountright > div > button:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
+}
+.accountright > div > button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.5s;
+  padding: 0.5vmax 1vmax;
+}
+
+@media screen and (max-width: 600px) {
+  .account {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .accountleft {
+    padding: 0;
+    min-height: 90vh;
+  }
+
+  .accountright > a {
+    font: 100 1rem "Roboto";
+    margin-top: 6vw;
+  }
+}

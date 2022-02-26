@@ -1,0 +1,16 @@
+/node_modules
+/backend/config/config.env
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.js
+
+/frontend/coverage
+
+/frontend/build
+
+/frontend/.DS_Store
+/frontend/.env.local
+/frontend/.env.development.local
+/frontend/.env.test.local
+/frontend/.env.production.local
+
